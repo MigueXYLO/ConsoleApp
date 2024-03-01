@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SharedLibrary;
 
 namespace ConsoleApp
 {
@@ -10,7 +11,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            string x = "Hello World!";
+            string x = SIHelper.GetUCName();
             Console.WriteLine(x);
             Console.ReadLine();
         }
