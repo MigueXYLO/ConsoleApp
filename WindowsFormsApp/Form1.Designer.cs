@@ -53,6 +53,7 @@
             this.textBoxStudentName.Name = "textBoxStudentName";
             this.textBoxStudentName.Size = new System.Drawing.Size(461, 22);
             this.textBoxStudentName.TabIndex = 1;
+            // this.textBoxStudentName.TextChanged += new System.EventHandler(this.textBoxStudentName_TextChanged);
             // 
             // buttonGetUCName
             // 

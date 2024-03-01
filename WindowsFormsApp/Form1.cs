@@ -31,7 +31,21 @@ namespace WindowsFormsApp
 
         private void btnSaveToDatabase_Click(object sender, EventArgs e)
         {
+            //get the name and uc name from the text boxes
+            string studentName = textBoxStudentName.Text;
+            string ucName = textBoxUCName.Text;
 
+            //create a boolean to check if we get an error sending it to the db
+            int error = DatabaseHelper.CreateStudent(studentName,ucName);
+            if (error == 0)
+            {
+                MessageBox.Show("Error saving to database");
+            }
+            else
+            {
+                MessageBox.Show("Saved to database");
+            }
         }
+
     }
 }
